@@ -1,0 +1,8 @@
+==== 07/07/2024 ====
+
+--> folder managemet
+
+installations : 
+
+npm i -D nodemone
+npm i -D prettier

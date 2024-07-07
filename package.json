@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "this is the backend folder of wmc lspd website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodexKnight-ai/LSPD_CodeXknight_X_DataWizard.git"
+  },
+  "keywords": [
+    "wmc",
+    "lspd",
+    "website",
+    "au"
+  ],
+  "author": "DataWizard CodexKnight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodexKnight-ai/LSPD_CodeXknight_X_DataWizard/issues"
+  },
+  "homepage": "https://github.com/CodexKnight-ai/LSPD_CodeXknight_X_DataWizard#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
+  }
+}
