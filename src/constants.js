@@ -1,1 +1,1 @@
-export const DB_NAME = "LSPD_Server" ;
+export const DB_NAME ='lspd' ;
