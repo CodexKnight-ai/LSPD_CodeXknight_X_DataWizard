@@ -1,6 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 
 
 const userSchema = new Schema(
@@ -22,7 +22,7 @@ const userSchema = new Schema(
     },
     phoneNumber: {
       type: String,
-      required: true,
+      required: [true, "Phonenumber is required"],
       trim: true,
       index: true,
     },
