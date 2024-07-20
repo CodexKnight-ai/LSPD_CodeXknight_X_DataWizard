@@ -45,6 +45,7 @@ userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, 10); //Encrypting password
   next();
 });
+
 userSchema.methods.isPasswordCorrect = async function (password) {
   return await bcrypt.compare(password, this.password); //checking password with the original one
 };
@@ -63,6 +64,7 @@ userSchema.methods.generateAccessToken = async function () {
     }
   );
 };
+
 userSchema.methods.generateRefreshToken = function () {
   return jwt.sign(
     {
@@ -74,4 +76,5 @@ userSchema.methods.generateRefreshToken = function () {
     }
   );
 };
+
 export const User = mongoose.model("User", userSchema);
